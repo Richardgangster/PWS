@@ -1,0 +1,10 @@
+pragma solidity ^0.8.7; 
+// SPDX-License-Identifier: UNLICENSED
+
+
+contract Stoken { 
+    address public owner; 
+    constructor() { 
+        owner = msg.sender; 
+    }
+}

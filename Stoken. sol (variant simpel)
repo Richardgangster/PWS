@@ -1,13 +1,18 @@
-pragma solidity ^0.8.9; // Specificeert versie voor compiler
+// SPDX-License-Identifier: MIT
 
+// Specificeert versie voor compiler, zodat human readable code omgezet kan worden tot bits
+pragma solidity ^0.8.9; 
 
-contract Stoken { // Definieert naam contract 
-    address public owner; // Specificeert type en visability variabele
+// Definieert naam contract
+contract Stoken {  
+    // Specificeert type en visability variabele
+    address public owner; 
     
     // Initieert toestandsvariabelen
     // Code uitgevoerd wanneer contract gemaakt of op blockchain gezet
     // Geen arguments binnen parameters, dus sprake van een Default constructor 
     constructor() { 
-        owner = msg.sender; // Adres van degene die transactie verzendt, omdat 'deployen' een soort transactie is de message sender in dit geval ons public adres
+        // Adres van degene die transactie verzendt, omdat 'deployen' een soort transactie is de message sender in dit geval ons public adres
+        owner = msg.sender; 
     }
 }
